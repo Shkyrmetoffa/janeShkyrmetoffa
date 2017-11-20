@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './main.scss';
-import { Asign } from './asign';
+import { Aside } from './aside';
 import { Content } from './content';
 
 export const Main = () => {
@@ -10,7 +10,7 @@ export const Main = () => {
             <main className = "main" > 
             <h1>{ text } </h1>
             <div className = "content">
-            <Asign />
+            <Aside />
             <Content />
             </div>
             </main>
