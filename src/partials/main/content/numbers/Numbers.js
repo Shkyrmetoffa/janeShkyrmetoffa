@@ -1,26 +1,29 @@
 import './numbers.scss';
 
-export const Numbers = (props) => {
+export const Numbers = ({
+  from,
+  to,
+  odd,
+  even
+}) => {
   let arr = [];
-  for (let i = +props.from; i <= props.to; i++) {
+  for (let i = +from; i <= to; i++) {
     arr.push(i);
   }
-
-  if (props.odd !== undefined) {
+  if (odd !== undefined) {
     arr = arr.filter(num => num % 2);
   }
-  if (props.even !== undefined) {
-    arr = arr.filter( num => {
-      if (num % 2 == 0) {return num; };
-  }) 
+  if (even !== undefined) {
+    arr = arr.filter(num => num % 2 === 0);
   }
+
   return (
     <div className="num-list">
       <ul>
         {
           arr.map((num, index) =>
             <li key={index}>{num}</li>)
-          }
+        }
       </ul>
     </div>
   );
