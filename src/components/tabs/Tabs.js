@@ -7,6 +7,11 @@ export class Tabs extends React.Component {
     super(props);
     this.state = { id: props.selectedIndex };
   }
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      id: nextProps.selectedIndex
+    });
+  }
   clickTab = (id) => {
     this.setState({ id });
   }
