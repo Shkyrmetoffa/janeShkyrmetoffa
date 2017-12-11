@@ -6,10 +6,12 @@ const nav = [
   { id: 4, name: 'Dashboard' },
   { id: 6, name: 'Next' }
 ];
-export class Header extends React.Component {
+export class Header extends Component{
   render() {
-    return <header className="header" >
-    <Navigation list={nav} title="name" />
-  </header>
+    return (
+      <header className="header" >
+        <Navigation list={nav} title="name" />
+      </header>
+    );
   }
 }
