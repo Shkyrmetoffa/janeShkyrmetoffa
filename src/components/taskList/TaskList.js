@@ -4,12 +4,12 @@ import './taskList.scss';
 
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thir', 'Fri', 'Sat'];
 const getDay = () => days[new Date().getDay()];
-const dayIndex = () => new Date().getDay;
+const dayIndex = () => new Date().getDay();
 
 export const TaskList = () => (
   <div className="tabs-block">
     <Tabs
-      selectedIndex={dayIndex}
+      selectedIndex={dayIndex()}
     >
       {
       days.map(day => (
