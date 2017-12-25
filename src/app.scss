@@ -1,7 +1,7 @@
-// @import "variables";
-// body {
-//     background: $main-bg;
-// }
+@import "./variables";
+body {
+    background: $main-bg;
+} 
 * {
     margin: 0;
     padding: 0;
