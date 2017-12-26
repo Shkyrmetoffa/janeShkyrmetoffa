@@ -1,23 +1,12 @@
-@import "./variables";
+@import "variables";
+
 body {
-    background: $main-bg;
-} 
-* {
-    margin: 0;
-    padding: 0;
-  }
-header {
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-}
-footer {
-    height: 80px;
-    background: greenyellow;
+  background: $main-bg;
+  margin: 0;
 }
 
-  .content {
-    min-height: calc(100vh - 80px);
-  }
-  
-  
+#app {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  min-height: 100vh;
+}

@@ -1,14 +1,19 @@
+import { Navigation } from 'partials/navigation/index';
+import { logout } from 'services/userService';
 import './header.scss';
-// import { Navigation } from '../../components/navigation';
 
+export const Header = ({ user, setLoginState }) => {
+  const onLogout = () => {
+    logout()
+      .then(() => setLoginState(false))
+      /* eslint no-console: ["error", { allow: ["error"] }] */
+      .catch(console.error);
+  };
 
-export class Header extends Component{
-  render() {
-    return (
-      <header className="header" >
-      Header
-        {/* <Navigation list={nav} title="name" /> */}
-      </header>
-    );
-  }
-}
+  return (
+    <header className="header">
+      <Navigation user={user} />
+      {user && <button onClick={onLogout}>Logout</button>}
+    </header>
+  );
+};

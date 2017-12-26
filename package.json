@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/Shkyrmetoffa/janeShkyrmetoffa#readme",
   "dependencies": {
+    "jquery": "^3.2.1",
     "node-sass": "^4.7.2",
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "react-modal": "^3.1.10",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

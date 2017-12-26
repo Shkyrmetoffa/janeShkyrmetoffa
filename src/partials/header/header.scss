@@ -1,9 +1,6 @@
 @import "../../variables";
-.header {
-    background: grey;
-    li {
-        display: inline-block;
-        margin-right: 20px;
-    }
-}
 
+.header {
+  background: #aaa;
+  padding: $common-paddings;
+}
