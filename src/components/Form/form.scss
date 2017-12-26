@@ -1,3 +1,39 @@
+.user-auth-form{
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%;
+  border: 1px solid #49b871;
+  color: rgba(255, 255, 255, .8);
+  background-color: transparent;
+  height: 50px;
+  border-radius: 30px;
+  padding: 0 20px 0 40px;
+  font-size: 17px;
+  transition: all .2s linear;
+}
+input:focus {
+  box-shadow: 0 0 10px #49b871;
+}
+.input-group{
+  position: relative;
+}
+.input-group + .input-group{
+  margin-top: 20px;
+}
+.input-group.icon-on-input label{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%) ;
+}
+.input-group.icon-on-input label{
+  color: #fff;
+  font-size: 15px;
+}
 .user {
   input.error {
     box-shadow: 0 0 5px red;
@@ -11,4 +47,26 @@
     list-style: none;
     margin: 0 0 10px;
   }
+  .btn{
+    display: inline-block;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    transition: all .2s linear;
+    
+  }
+  .btn.btn-default{
+    background-color: #36cb6c;
+  }
+  .btn.btn-default:hover{
+    box-shadow: 0 3px 10px #36cb6c;
+  }
+  .btn.full-width{
+    width: 100%;
+  }
 }
+
